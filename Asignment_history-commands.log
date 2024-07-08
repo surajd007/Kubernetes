@@ -1,0 +1,45 @@
+    1  sudo apt update
+    2  hostname
+    3  sudo swapoff -a
+    4  sudo nano install.sh
+    5  ip addr
+    6  sudo nano install.sh
+    7  bash install.sh 
+    8  cat install.sh 
+    9  sudo kubeadm config images pull
+   10  sudo kubeadm init
+   11  mkdir -p $HOME/.kube
+   12  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+   13  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+   14  kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/calico.yaml
+   15  kubectl get nodes
+   16  ls -lrth
+   17  mv install.sh K8s_install.sh
+   18  git init
+   19  ls
+   20  git status
+   21  git add K8s_install.sh
+   22  git status
+   23  git commit -m "Kubernetes intallation script"
+   24  git remote add origin https://github.com/surajd007/Kubernetes.git
+   25  git branch
+   26  git push -u origin master
+   27  kubectl get nodes
+   28  kubeadm token create --print-join-command
+   29  kubectl get nodes
+   30  pwd
+   31  sudo nano Asignment1.yaml
+   32  kubectl apply -f Asignment1.yaml 
+   33  sudo nano Asignment1.yaml
+   34  kubectl apply -f Asignment1.yaml 
+   35  vi Asignment1.yaml 
+   36  kubectl apply -f Asignment1.yaml 
+   37  vi assnm1.yaml
+   38  ls
+   39  diff -b Asignment1.yaml assnm1.yaml
+   40  kubectl apply -f assnm1.yaml
+   41  kubectl get deploy
+   42  kubectl get pods
+   43  kubectl get pods -o wide
+   44  curl 192.168.97.194
+   45  history >> Asignment_history-commands.log
